@@ -29,6 +29,7 @@ The goal of this workflow is to ensure a structured and efficient development pr
   - munem-branch
   - wahid
   - Himel
+  - Maliha
 - After completion, branches are merged via *pull requests*.
 - Deleted branches after merging to maintain a clean repository.
 
