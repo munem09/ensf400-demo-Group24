@@ -67,7 +67,7 @@ A *GitHub Actions workflow* is used for:
 
 ## *6. Deployment & Containerization*
 - Docker container is uploaded to *Docker Hub*.
-- *Docker Hub URL*: (NOT DONE YET)
+- *Docker Hub URL*: https://hub.docker.com/layers/munem09/ensf400-group24/ensf400_image1/images/sha256-342599e73b04337a6972af884361dbf63a603ba8ec320ea6b19bcbfc30792f14
 
 ### *Docker Commands Used*
 bash
