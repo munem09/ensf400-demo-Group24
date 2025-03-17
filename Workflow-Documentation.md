@@ -6,7 +6,7 @@
 - *Team Members*:  
   - Himel Paul  
   - M Munem Morshed
-  - SM Wahid  
+  - SM Wahid Chowdhury
   - Maliha Chowdhury Adrita
  
 ---
