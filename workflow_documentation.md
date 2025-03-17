@@ -40,8 +40,8 @@ The goal of this workflow is to ensure a structured and efficient development pr
 - Team members review the code before merging PRs.
 - Example PRs:
   - *#1* Merged wahid branch into master
-  - *#2* Created Docker image
-  - *#3* Updated Dockerfile with better code
+  - *#2* Improved Dockerfile with better code
+  - *#3* Uploaded completely running Dockerfile
   - *#4* Created Workflow Documentation
 
 ---
@@ -56,25 +56,12 @@ The goal of this workflow is to ensure a structured and efficient development pr
   - Configured Gradle environment for the project
   - Addressed compatibility issues with Gretty 3.0.4
 
-- *Repository Cleanup*
-  - Branches are deleted after merging to keep the repository organized.
-
 ---
 
-## *5. GitHub Actions Workflow (CI/CD)*
+## *5. GitHub Actions Workflow*
 A *GitHub Actions workflow* is used for:
 - *Building the Docker image* using the updated Dockerfile
 - *Pushing the image* to Docker Hub
-- *Ensuring automated testing (if applicable)*
-
-### *Workflow File Location*
-- .github/workflows/docker-build.yml
-
-### *Workflow Steps*
-1. *Triggers on push to main branch*  
-2. *Builds a Docker image* using the latest code  
-3. *Pushes the image* to *Docker Hub* for deployment  
-4. *Runs automated tests (if enabled in future iterations)*  
 
 ---
 
@@ -84,8 +71,8 @@ A *GitHub Actions workflow* is used for:
 
 ### *Docker Commands Used*
 bash
-docker build -t my-team/ensf400-project:latest .
-docker push my-team/ensf400-project:latest
+Build: docker build -t desktop-app .
+Run:  docker run -p 8080:8080 desktop-app
 
 
 ---
@@ -100,7 +87,6 @@ To demonstrate collaboration, we included:
 
 ## *8. Next Steps & Best Practices*
 - Continue using feature branches to avoid direct commits to main.
-- Automate testing in *GitHub Actions* to prevent breaking changes.
 - Ensure all members contribute code and documentation to show collaboration.
 - Keep Docker images *updated and optimized* for future builds.
 
