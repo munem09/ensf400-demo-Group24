@@ -48,7 +48,7 @@ The goal of this workflow is to ensure a structured and efficient development pr
 
 ## *4. Key Contributions*
 - *Dockerfile Improvements*
-  - Refactored and updated by multiple contributors (munem09, HimelPaul)
+  - Refactored and updated by multiple contributors 
   - Ensured compatibility with Gradle 7.6.1 and JDK 11
   - Fixed issues related to *Gretty version compatibility*
 
