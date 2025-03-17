@@ -79,10 +79,9 @@ Run:  docker run -p 8080:8080 desktop-app
 
 ## *7. Screenshots for Submission*
 To demonstrate collaboration, we included:
- *GitHub contribution history (commits from all team members)*  
- *Pull request logs (code review process)*  
- *Docker image push logs*  
-
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A1.jpg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A2.jpg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A3.jpg?raw=true)
 ---
 
 ## *8. Next Steps & Best Practices*
