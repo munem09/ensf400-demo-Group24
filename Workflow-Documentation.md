@@ -40,7 +40,7 @@ The goal of this workflow is to ensure a structured and efficient development pr
 - Team members review the code before merging PRs.
 - Example PRs:
   - *#1* Merged wahid branch into master
-  - *#2* Renamed DockerFile to Dockerfile
+  - *#2* Renamed DockerFile
   - *#3* Updated Dockerfile with better code
   - *#4* Created Workflow Documentation
 
