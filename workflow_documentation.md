@@ -84,6 +84,7 @@ To demonstrate collaboration, we included:
 ![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A3.jpg?raw=true)
 ![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A4.jpeg?raw=true)
 ![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A5.jpeg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/download_image.jpg?raw=true)
 ---
 
 ## *8. Next Steps & Best Practices*
