@@ -1,0 +1,10 @@
+// devcontainer.json
+{
+    "name": "CI/CD DevContainer",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [8080],
+    "postCreateCommand": "./setup.sh"
+  }
+  
