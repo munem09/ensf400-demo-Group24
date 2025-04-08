@@ -1,10 +1,8 @@
-// devcontainer.json
 {
-    "name": "CI/CD DevContainer",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
-    "forwardPorts": [8080],
-    "postCreateCommand": "./setup.sh"
-  }
-  
+  "name": "ENSF400-CICD",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "service docker start"
+}
