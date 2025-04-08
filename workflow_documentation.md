@@ -67,7 +67,7 @@ A *GitHub Actions workflow* is used for:
 
 ## *6. Deployment & Containerization*
 - Docker container is uploaded to *Docker Hub*.
-- *Docker Hub URL*: (NOT DONE YET)
+- *Docker Hub URL*: https://hub.docker.com/layers/munem09/ensf400-group24/ensf400_image1/images/sha256-342599e73b04337a6972af884361dbf63a603ba8ec320ea6b19bcbfc30792f14
 
 ### *Docker Commands Used*
 bash
@@ -79,10 +79,12 @@ Run:  docker run -p 8080:8080 desktop-app
 
 ## *7. Screenshots for Submission*
 To demonstrate collaboration, we included:
- *GitHub contribution history (commits from all team members)*  
- *Pull request logs (code review process)*  
- *Docker image push logs*  
-
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A1.jpg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A2.jpg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A3.jpg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A4.jpeg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/A5.jpeg?raw=true)
+![image](https://github.com/smw989/ensf400-demo-Group24/blob/master/Activity_images/download_image.jpg?raw=true)
 ---
 
 ## *8. Next Steps & Best Practices*
