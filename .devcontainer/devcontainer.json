@@ -4,5 +4,6 @@
     "dockerfile": "Dockerfile"
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "service docker start"
+  "postCreateCommand": "service docker start && service jenkins start",
+  "remoteUser": "root"
 }
