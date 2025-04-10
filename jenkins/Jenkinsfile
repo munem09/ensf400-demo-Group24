@@ -1,9 +1,6 @@
 pipeline {
   agent any
 
-  tools {
-    jdk 'openjdk-17'
-  }
 
   environment {
     // Optional: Set these if you integrate with external tools later
