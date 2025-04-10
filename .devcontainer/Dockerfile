@@ -2,28 +2,24 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install Jenkins + Java + Docker
+# Install basic dependencies
 RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk \
+    openjdk-17-jdk \
     curl \
     git \
-    gnupg2 \
     unzip \
     docker.io \
-    lsb-release \
-    && rm -rf /var/lib/apt/lists/*
+    tmux \
+    && apt-get clean
 
-# Install Jenkins
-RUN curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | tee \
-    /usr/share/keyrings/jenkins-keyring.asc > /dev/null && \
-    echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-    https://pkg.jenkins.io/debian-stable binary/ | tee \
-    /etc/apt/sources.list.d/jenkins.list > /dev/null && \
-    apt-get update && \
-    apt-get install -y jenkins
+# Create Jenkins working directory
+RUN mkdir -p /opt/jenkins
 
-# Jenkins listens here
+# Download Jenkins WAR directly (stable LTS version)
+RUN curl -L -o /opt/jenkins/jenkins.war https://get.jenkins.io/war-stable/latest/jenkins.war
+
+# Expose Jenkins port
 EXPOSE 8080
 
-# Start Jenkins and keep container alive
-CMD service docker start && service jenkins start && tail -f /var/log/jenkins/jenkins.log
+# CMD is kept for local Docker use, but ignored in Codespaces
+CMD ["java", "-jar", "/opt/jenkins/jenkins.war", "--httpPort=8080"]

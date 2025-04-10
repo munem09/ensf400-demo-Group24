@@ -1,9 +1,13 @@
 {
-  "name": "ENSF400-CICD",
+  "name": "jenkins-ci",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "service docker start && service jenkins start",
-  "remoteUser": "root"
+  "postAttachCommand": "tmux new -d -s jenkins 'java -jar /opt/jenkins/jenkins.war --httpPort=8080'",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"]
+    }
+  }
 }
