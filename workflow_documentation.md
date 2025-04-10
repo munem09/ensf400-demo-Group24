@@ -27,7 +27,7 @@ The goal of this workflow is to ensure a structured and efficient development pr
 - Each team member works on a *feature branch* before merging changes into master.
 - Example branches:
   - munem-branch
-  - wahid
+  - Wahid
   - Himel
   - Maliha
 - After completion, branches are merged via *pull requests*.
