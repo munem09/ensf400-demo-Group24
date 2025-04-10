@@ -1,20 +1,7 @@
 pipeline {
   agent any
 
-
-  environment {
-    // Optional: Set these if you integrate with external tools later
-    // SONAR_HOST_URL = 'http://localhost:9000'
-    // SONAR_TOKEN = credentials('sonar-token')
-  }
-
   stages {
-    stage('Prep Wrapper') {
-      steps {
-        sh 'chmod +x ./gradlew'
-      }
-    }
-
     stage('Build') {
       steps {
         sh './gradlew clean assemble'
